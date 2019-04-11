@@ -9,6 +9,7 @@
   </head>
   <body>
     <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]</h1>
+    <p>Click <a th:href="@{/secretTime}">here</a> to see the secret time.</p>
     <form th:action="@{/logout}" method="post">
       <input type="submit" value="Sign Out" />
     </form>

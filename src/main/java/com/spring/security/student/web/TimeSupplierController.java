@@ -18,7 +18,7 @@ public class TimeSupplierController {
 		return ZonedDateTime.now();
 	}
 	
-	@GetMapping(value="/secret-time",produces="application/json")
+	@GetMapping(value="/secretTime",produces="application/json")
 	private ZonedDateTime currentSecretTime() {
 		return ZonedDateTime.now(ZoneId.of("UTC"));
 	}
