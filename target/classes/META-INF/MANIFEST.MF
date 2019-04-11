@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: spring.security.student
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: msanti04
+Implementation-Vendor-Id: com.spring.security.student
+Build-Jdk: 1.8.0_202
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring.security.student
+Created-By: Maven Integration for Eclipse
+
