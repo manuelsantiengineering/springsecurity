@@ -10,7 +10,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CustomAuthenticationProvider implements AuthenticationProvider {
+public class CustomAuthenticationProviderWithRoles implements AuthenticationProvider {
 
 	@Autowired
 	private ThirdPartyAuthProviderClient thirdPartyAuthProviderClient;
@@ -32,7 +32,5 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 	public boolean supports(Class<?> authentication) {
 		return authentication.equals(UsernamePasswordAuthenticationToken.class);
 	}
-
-	
 	
 }
