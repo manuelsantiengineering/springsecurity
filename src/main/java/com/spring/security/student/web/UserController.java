@@ -29,7 +29,8 @@ public class UserController {
 	}
 	
 	@GetMapping(value="/user/{userId}",produces="application/json")
-	public Mono<String> getSpecificUser(@PathVariable("userId") Integer userId, HttpServletRequest httpServletRequest) {
+	public Mono<String> getSpecificUser(@PathVariable("userId") Integer userId, 
+											HttpServletRequest httpServletRequest) {
 		if(httpServletRequest.isUserInRole("ROLE_USER")) {
 			return Mono.justOrEmpty(userService.getById(userId));
 		}else {

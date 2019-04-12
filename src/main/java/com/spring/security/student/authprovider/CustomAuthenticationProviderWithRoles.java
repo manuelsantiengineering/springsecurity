@@ -1,6 +1,5 @@
 package com.spring.security.student.authprovider;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
