@@ -25,7 +25,6 @@ public class OAuth2ClientSecurityConfiguration extends WebSecurityConfigurerAdap
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-//		http.antMatcher(antPattern)
 		http
 			.antMatcher("/**")
 			.authorizeRequests()
